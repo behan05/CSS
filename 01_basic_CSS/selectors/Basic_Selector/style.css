@@ -1,0 +1,29 @@
+* {
+    background-color: #212121;
+    color: #fff;
+}
+
+ol {
+    width: fit-content;
+    border: 2px solid white;
+    box-shadow: 1px 1px 1px 1px #fff;
+}
+
+#idSelector {
+    width: max-content;
+    border: 2px solid white;
+}
+
+.classSelector {
+    width: max-content;
+    border: 2px solid red;
+}
+
+body a[href$="learn-CSS/"] {
+    color: red;
+    text-decoration: none;
+}
+a[href^="https"]{
+    color: blue !important;
+    text-decoration: none;
+}
