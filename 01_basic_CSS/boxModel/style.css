@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    color: #fff;
+}
+
+div {
+    width: auto;
+    height: auto;
+    border: 2px solid white;
+    padding: 32px;
+    /* padding-left: 432px; */
+    text-align: center;
+}

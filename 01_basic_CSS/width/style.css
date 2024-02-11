@@ -1,0 +1,33 @@
+* {
+    background-color: #212121;
+    color: #fff;
+    /* box-sizing: border-box; */
+}
+
+
+/* #div1 {
+    width: 100%; fix width size extrinsic
+    width: auto; Browser decide the width
+    height: 300px;
+    border: 2px solid white;
+    padding: 30px;
+} */
+
+/* #div1 {
+    width: fit-content;
+    height: fit-content;
+    border: 2px  solid sienna;
+} */
+
+/* #div1 {
+    width: min-content;
+    height: min-content;
+    border: 2px  solid sienna;
+} */
+
+
+/* #div1 {
+    width: max-content;
+    border: 2px  solid sienna;
+} */
+
