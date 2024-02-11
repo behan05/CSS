@@ -1,4 +1,56 @@
 * {
     background-color: #212121;
     color: #fff;
+    box-sizing: border-box;
+}
+
+
+div{
+    width: auto;
+    height: 200px;
+    border: 2px solid #fff;
+    text-align: center;
+    text-transform: capitalize;
+    color: blueviolet;
+}
+
+div.divClass {
+    width: auto;
+    height: 200px;
+    border: 2px solid #fff;
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+    background-color: #fff;
+}
+
+#divBox {
+    width: auto;
+    height: 200px;
+    border: 2px solid #fff;
+    text-align: center;
+    text-transform: capitalize;
+    color: red;
+    background-color: #212121 !important;
+}
+
+input{
+    width: 150px;
+    height: auto;
+    border: 2px solid red;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+input[type="text"]{
+    width: 150px;
+    height: auto;
+    border: 2px solid wheat;
+    margin-top: 8px;
+    border-radius: 10px !important;
+}
+
+input::placeholder{
+    color: white;
+    text-transform: uppercase;
 }

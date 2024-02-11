@@ -8,13 +8,14 @@ Learn about the different kinds of stylesheets available, their differences, sel
 1 => Selectors.
 2 => CSS Box Model.
 3 => Image and Background.
-4 => Display and Position (position: static | absolute | relative | fixed | sticky)  (float: left | right)
-5 =>  Colours, Fonts, lists and Tables
-6 => filter CSS property
-7 => Debugging and Dev tools ?
-8 => Practice Practice Practice ?
-9 => Responsive Web Design ??
-10=> There are 3 important things in Responsive web design:
+4 => text properties
+5 => Display and Position (position: static | absolute | relative | fixed | sticky)  (float: left | right)
+6 =>  Colours, Fonts, lists and Tables
+7 => filter CSS property
+8 => Debugging and Dev tools ?
+9 => Practice Practice Practice ?
+10 => Responsive Web Design ??
+11=> There are 3 important things in Responsive web design:
 ///////////////////////////////////////////////////////
 Media Queries: Media queries allow you to apply different styles based on the characteristics of the device or viewport, such as screen size, resolution, and orientation. They are fundamental for creating responsive designs that adapt to various screen sizes.
 ///////////////////////////////////////////////////////
