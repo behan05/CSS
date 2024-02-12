@@ -7,7 +7,7 @@ Learn about the different kinds of stylesheets available, their differences, sel
 
 1 => Selectors.
 2 => CSS Box Model.
-3 => Image and Background.
+3 => Image and Background and its properties.
 4 => text properties
 5 => Display and Position (position: static | absolute | relative | fixed | sticky)  (float: left | right)
 6 =>  Colours, Fonts, lists and Tables
