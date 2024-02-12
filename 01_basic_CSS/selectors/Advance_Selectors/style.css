@@ -1,0 +1,53 @@
+* {
+    background-color: #212121;
+    color: #fff;
+}
+
+/* grouping selector */
+
+.classBox,
+#idBox,
+p {
+    width: auto;
+    /* height: 40px; */
+    border: 2px solid red;
+}
+
+/* psuedo selector use to style the state of element */
+/* p:hover { 
+    box-shadow: 1px 2px 3px 4px #fff;
+}
+p:only-child
+ {
+    color: yellow;
+} */
+
+/* Pseudo element selector use to target the specific part of the element*/
+
+/* input::placeholder {
+    color: green;
+}
+input[type="text"] {
+    color: red;
+} */
+
+
+/* Decendent selector */
+/* #idBox p{
+    color: green;
+} */
+
+/* Sibling selector (~ +) */
+/* #idBox ~ p {
+    color: green;
+} */
+
+/* #idBox + p {
+    color: green;
+} */
+
+/* compound selector */
+
+p.ps {
+    color: blueviolet;
+}
