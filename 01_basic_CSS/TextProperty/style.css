@@ -1,0 +1,38 @@
+* {
+    background-color: #212121;
+    color: #fff;
+}
+
+h1 {
+    color: red;
+    letter-spacing: 3px;
+    /* text-decoration: overline; */
+    /* text-decoration: underline; */
+    /* text-decoration: line-through; */
+    /* text-transform: capitalize; */
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px gray;
+}
+
+img {
+    width: 300px;
+}
+
+p {
+    color: rebeccapurple;
+    word-spacing: 10px;
+    text-align: justify;
+    text-transform: capitalize;
+    text-shadow: 1px 0px 1px #fff;
+}
+span {
+    color: red;
+    letter-spacing: 5px;
+}
+
+a {
+    color: red;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
