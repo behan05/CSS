@@ -1,0 +1,49 @@
+/* * {
+    background-color: #212121;
+    color: #fff;
+} */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    text-transform: capitalize;
+    text-shadow: 0px 0px 1rem crimson;
+    border-radius: 8px;
+    filter: drop-shadow(0px 0px 1rem red) opacity(90%) contrast(200%);
+    font-size: 1.2rem;
+    color: gold;
+    box-shadow: 0px 0px 3px white;
+    font-weight: 800;
+}
+
+.Red {
+    background-color: red;
+}
+
+.Blue {
+    background-color: blue;
+}
+
+.Green {
+    background-color: green;
+}
+
+.Yellow {
+    background-color: yellow;
+    color: red !important;
+}
+
+.Gray {
+    background-color: gray;
+}
