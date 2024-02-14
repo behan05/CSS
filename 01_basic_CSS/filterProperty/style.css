@@ -1,0 +1,33 @@
+* {
+    background-color: #212121;
+    color: #fff;
+}
+
+h1 {
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px gray;
+    text-decoration: underline;
+}
+
+img {
+    width: 500px;
+    /* filter: blur(1px); */
+    /* filter: brightness(120%); */
+    /* filter: contrast(150%); */
+    /* filter: drop-shadow(1px 1px 1rem red); */
+    /* filter: grayscale(100%); for black and white */
+    /* filter: invert(100%); */
+    /* filter: opacity(60%); for image transparent 0 to 100 in % */
+    /* filter: saturate(200%); for add more color make more beautyfull */
+    filter:drop-shadow(1px 1px 1rem red) saturate(200%) brightness(120%);
+    border-radius: 10px; 
+}
+
+span {
+    color: red;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    text-shadow: 1px 1px red;
+}
