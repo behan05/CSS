@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+    border-bottom: 2px solid #dadada;
+}
+
+.nav-part2 {
+    display: flex;
+    column-gap: 3vw;
+}
+
+.nav h2 {
+    font-size: 1.8rem;
+}
+
+.nav h4 {
+    font-size: 1.1rem;
+}
+
+.nav i {
+    display: none;
+}
+
+
+
+/* Main content space */
+
+.content {
+    height: calc(100vh - 70px);
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    width: 55%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding: 3vw 3vw;
+}
+
+.left h1 {
+    text-transform: capitalize;
+    font-size: 2.2vw;
+    padding: 2vw 0;
+    letter-spacing: 3px;
+}
+.left span {
+    color: lightseagreen;
+}
+
+.left p {
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.4vw;
+    color: #666;
+    width: 80%;
+    text-align: justify;
+    margin-bottom: 1.2vw;
+}
+
+.left button {
+    font-size: 1.1vw;
+    font-weight: 600;
+    padding: 0.6vw 1.4vw;
+    background-color: lightseagreen;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px 2px lightseagreen;
+}
+
+.right {
+    width: 45%;
+    height: 100%;
+}
+.right img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:600px) {
+
+    .nav h2 {
+        font-size: 1.8rem;
+    }
+
+    .nav h4 {
+        font-size: 1.1rem;
+        display: none;
+    }
+
+    .nav i {
+        display: initial;
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+
+    /* Main Content */
+
+    .content {
+        height: calc(100vh - 70px);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        width: 100%;
+        height: 50%;
+        /* background-color: aqua; */
+        padding: 3vw 3vw;
+    }
+    
+    .left h1 {
+        text-transform: capitalize;
+        font-size: 3.3vw;
+        padding: 2vw 0;
+        letter-spacing: 3px;
+    }
+    
+    .left p {
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 4vw;
+        color: #666;
+        width: 80%;
+        text-align: justify;
+        margin-bottom: 2.5vw;
+    }
+    
+    .left button {
+        font-size: 3.5vw;
+        font-weight: 600;
+        padding: 0.6vw 1.4vw;
+        background-color: lightseagreen;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0px 0px 1px 2px lightseagreen;
+    }
+
+    .right {
+        width: 100%;
+        height: 100%;
+    }
+    .right img{
+        width: 100%;
+        height: 100%;
+    }
+}
