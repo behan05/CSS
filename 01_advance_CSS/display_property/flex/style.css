@@ -45,5 +45,5 @@ body {
 
 .box-4 {
     /* flex-basis:200px; initial width */
-    /* align-self: flex-end; */
+    align-self: flex-end;
 }
