@@ -7,13 +7,12 @@
 .container {
     width: 100vw;
     height: 100vh;
-    /* background-color: lightseagreen; */
+    position: relative;
 }
 
 .nav {
     height: 70px;
     width: 100%;
-    /* background-color: aliceblue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,10 +47,6 @@
 
 /* for smart phone */
 @media (max-width: 660px) {
-
-    .nav {
-        background-color: lightgreen;
-    }
 
     .nav-part2 a {
         display: none;
@@ -113,5 +108,296 @@
 
     .nav-part2 i {
         display: none;
+    }
+}
+
+/* hero section */
+
+.main {
+    width: 100vw;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+/* for hero smart phone */
+@media (max-width: 660px) {
+    .main {
+        align-items: center;
+    }
+
+    .left {
+        width: 100%;
+        height: 80%;
+        position: relative;
+        background-color: lightgrey;
+        padding: 30px 25px;
+    }
+
+    .left h2 {
+        font-size: 2rem;
+        filter: contrast(130%) drop-shadow(0px 0px 2px lightseagreen);
+        margin: 15px 0px;
+    }
+
+    .left p {
+        font-size: 1.1rem;
+        filter: contrast(130%) drop-shadow(0px 0px 2px lightgrey);
+        letter-spacing: 1px;
+        overflow: hidden;
+        text-align: justify;
+        margin: 15px 0px;
+    }
+
+    .left button {
+        padding: 0.8rem 1.6rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 900;
+        filter: contrast(130%) drop-shadow(0px 0px 1em lightseagreen);
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        background-color: lightslategray;
+        color: lightseagreen;
+        margin: 25px 0px;
+    }
+
+    .left button:hover {
+        padding: 0.8rem 1.6rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 900;
+        filter: contrast(130%) drop-shadow(0px 0px 1em lightslategray);
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        background-color: lightseagreen;
+        color: #dadada;
+    }
+
+    .right {
+        width: auto;
+        height: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 4vw;
+    }
+
+    .right img {
+        width: 100%;
+        height: 100%;
+        filter: contrast(130%) drop-shadow(0px 0px 1em lightslategray);
+        object-fit: cover;
+        position: 50% 50%;
+    }
+}
+
+/* for hero tablet */
+@media (min-width: 661px) and (max-width: 990px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+    .left {
+        width: 100%;
+        height: 70%;
+        background-color: lightgray;
+        padding: 3rem 5rem;
+    }
+
+    .left h2 {
+        font-size: 2rem;
+        filter: contrast(130%) drop-shadow(0px 0px 2px lightseagreen);
+        padding: 1.5vw 0px;
+        
+    }
+
+    .left p {
+        font-size: 1.1rem;
+        padding: 0px 0px 4vw;
+        filter: contrast(130%) drop-shadow(0px 0px 2px lightgrey);
+        letter-spacing: 1px;
+        overflow: hidden;
+        text-align: justify;
+    }
+
+    .left button {
+        padding: 1rem 1.6rem;
+        margin: 1rem 0;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 900;
+        filter: contrast(130%) drop-shadow(0px 0px 1em lightseagreen);
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        background-color: lightslategray;
+        color: lightseagreen;
+    }
+
+    .left button:hover {
+        padding: 0.8rem 1.6rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 900;
+        filter: contrast(130%) drop-shadow(0px 0px 1em lightslategray);
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        background-color: lightseagreen;
+        color: #dadada;
+    }
+
+    .right {
+        width: 100%;
+        height: auto ;
+        position: relative;
+    }
+
+    .right img {
+        width: 100%;
+        height: 100%;
+        filter: contrast(130%) drop-shadow(0px 0px 1em lightslategray);
+        object-fit: cover;
+    }
+}
+
+/* for hero laptop */
+
+@media (min-width: 991px) and (max-width: 1023px) {
+
+    .left {
+        width: 55%;
+        height: 100%;
+        background-color: lightgrey;
+        padding: 5rem;
+    }
+
+    .left h2 {
+        font-size: 2rem;
+        filter: contrast(130%) drop-shadow(0px 0px 2px lightseagreen);
+        padding: 1.5vw 0px;
+    }
+
+    .left h2 span {
+        font-weight: 900;
+    }
+
+    .left p {
+        font-size: 1.1rem;
+        padding: 0px 0px 4vw;
+        filter: contrast(130%) drop-shadow(0px 0px 2px lightgrey);
+        letter-spacing: 1px;
+        overflow: hidden;
+        text-align: justify;
+    }
+
+    .left button {
+        padding: 0.8rem 1.6rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 900;
+        filter: contrast(130%) drop-shadow(0px 0px 1em lightseagreen);
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        background-color: lightslategray;
+        color: lightseagreen;
+    }
+
+    .left button:hover {
+        padding: 0.8rem 1.6rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 900;
+        filter: contrast(130%) drop-shadow(0px 0px 1em lightslategray);
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        background-color: lightseagreen;
+        color: #dadada;
+    }
+
+    .right {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 2rem auto;
+        background-color: red;
+    }
+
+    .right img {
+        width: 100%;
+        filter: contrast(130%) drop-shadow(0px 0px 1em lightslategray);
+        object-fit: cover;
+    }
+}
+
+/* for hero desktop */
+
+@media (min-width: 1024px) {
+    .left {
+        width: 55%;
+        height: 100%;
+        background-color: lightgrey;
+        padding: 5rem;
+    }
+
+    .left h2 {
+        font-size: 2rem;
+        filter: contrast(130%) drop-shadow(0px 0px 2px lightseagreen);
+        padding: 1.5vw 0px;
+    }
+
+    .left p {
+        font-size: 1.1rem;
+        padding: 0px 0px 4vw;
+        filter: contrast(130%) drop-shadow(0px 0px 2px lightgrey);
+        letter-spacing: 1px;
+        overflow: hidden;
+        text-align: justify;
+    }
+
+    .left button {
+        padding: 0.8rem 1.6rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 900;
+        filter: contrast(130%) drop-shadow(0px 0px 1em lightseagreen);
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        background-color: lightslategray;
+        color: lightseagreen;
+    }
+
+    .left button:hover {
+        padding: 0.8rem 1.6rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 900;
+        filter: contrast(130%) drop-shadow(0px 0px 1em lightslategray);
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        background-color: lightseagreen;
+        color: #dadada;
+    }
+
+    .right {
+        width: 45%;
+        height: auto;
+        position: relative;
+        margin: 2rem auto;
+    }
+
+    .right img {
+        width: 100%;
+        filter: contrast(130%) drop-shadow(0px 0px 1em lightslategray);
+        object-fit: cover;
     }
 }
