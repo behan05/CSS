@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    height: 80px;
+    width: 100vw;
+}
+
+.nav ul {
+    display: inline-block;
+}
+
+
+#home {
+    background-color: green;
+    color: #dadada;
+}
+
+.nav ul li {
+    list-style: none;
+    font-size: 1.1rem;
+    margin: 0px auto;
+    height: 40px;
+    width: 100vw;
+    background-color: lightgray;
+    padding: 10px;
+    letter-spacing: 1.5px;
+}
+
+.nav ul li:hover {
+    background-color: gray;
+    color: #dadada;
+}
+
+@media (max-width:450px) {
+    .nav ul li {
+        list-style: none;
+        font-size: 1.1rem;
+        margin: 0px auto;
+        height: 60px;
+        width: 100vw;
+        background-color: lightgray;
+        padding: 10px;
+        letter-spacing: 1.5px;
+    }
+}
