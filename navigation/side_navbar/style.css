@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: auto;
+}
+
+.side-bar {
+    width: 20%;
+    height: 100vh;
+    color: #000;
+    background-color: #dadada;
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+}
+
+.side-bar ul li.home {
+    background-color: green;
+}
+
+
+.side-bar ul li {
+    list-style: none;
+    width: 100%;
+    padding: 1vw;
+    background-color: lightgray;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.side-bar ul i {
+    display: none;
+}
+
+.side-bar ul li:hover {
+    background-color: darkgray;
+    color: #fff;
+    filter: saturate(150%) drop-shadow(0px 0px 1rem lightseagreen);
+    border-radius: 8px;
+    text-shadow: 0px 0px 5px;
+}
+
+
+@media (max-width:450px) {
+    .side-bar {
+        width: 40%;
+        height: 100vh;
+        color: #000;
+        background-color: #dadada;
+    }
+
+    .side-bar ul li {
+        display: none;
+    }
+
+    .side-bar ul i {
+        display: inline-block;
+        font-size: 2rem;
+        padding: 2rem;
+        text-shadow: 0px 0px 5px;
+        filter: drop-shadow(0px 0px 2rem gray);
+    }
+}
+
+
+/* Hero */
+
+.hero {
+    height: 100vh;
+    width: 80vw;
+    padding: 5rem;
+}
+
+.hero h2 {
+    margin: 20px 0;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-shadow: 0px 0px 5px;
+    filter: drop-shadow(0px 0px 2rem gray);
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-shadow: 0px 0px 5px;
+    filter: drop-shadow(0px 0px 2rem gray) saturate(150%);
+    line-height: 2.2vw;
+}
+
+@media (max-width:450px) {
+
+    .hero h2 {
+        margin: 20px 0;
+        font-size: 1.7rem;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        text-shadow: 0px 0px 5px;
+        filter: drop-shadow(0px 0px 2rem gray);
+    }
+
+    .hero p {
+        margin: 20px 0;
+        font-size: 1.7rem;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        text-shadow: 0px 0px 5px;
+        filter: drop-shadow(0px 0px 2rem gray) saturate(150%);
+        line-height: 6.2vw;
+    }
+
+}
