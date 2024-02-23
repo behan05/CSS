@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100%;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    position: relative;
+    gap: 0px;
+}
+
+div {
+    border: 2px solid #fff;
+    background-color: lightseagreen;
+
+}
+
+/* Start Header */
+.navbar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 76px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    filter: saturate(140%) drop-shadow(0 0 1rem lightseagreen);
+}
+
+.navbar h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.navMenu {
+    border: none;
+}
+
+.navMenu a {
+    text-decoration: none;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.navMenu a:hover {
+    text-underline-offset: 4px;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+/* End Header */
+
+/* Start hero */
+.main {
+    position: relative;
+    height: calc(100vh - 76px);
+    width: 70vw;
+    padding: 10vw;
+    color: #fff;
+    filter: saturate(140%) drop-shadow(0 0 1rem lightseagreen);
+
+}
+
+.main h4 {
+    font-size: 1.5rem;
+    margin: 2rem 0px;
+    text-shadow: 0 0 1rem;
+    text-shadow: 0px 0px 1rem #000;
+}
+
+.main p {
+    font-size: 1.4rem;
+    margin: 2rem 0px;
+    color: #000;
+    text-shadow: 0px 0px 1rem;
+}
+
+.main button {
+    font-size: 1.2rem;
+    border: none;
+    padding: 0.5rem 0.5rem;
+    font-weight: 600;
+    border-radius: 8px;
+    color: lightseagreen;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.main button:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 0 1rem 0.5rem #000;
+}
+
+/* End hero */
+
+/* Start ads */
+.ads {
+    height: calc(100vh - 76px);
+    filter: saturate(140%) drop-shadow(0 0 1rem lightseagreen);
+
+
+}
+
+.ads img {
+    height: calc(100vh - 160px);
+    width: 100%;
+    object-fit: cover;
+}
+
+.ads .time {
+    height: 76px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+/* End ads */
+
+/* Start footer */
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .desc {
+    height: auto;
+    padding: 1rem 0px;
+}
+
+.footer .desc h2 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 2rem;
+    text-shadow: 0px 0px 1rem #000;
+}
+
+.footer .desc p {
+    color: #000;
+    font-size: 1.5rem;
+    padding: 0rem 2rem;
+    text-align: justify;
+    text-shadow: 0px 0px 1rem;
+    font-variant: small-caps;
+}
+
+.footer .link_section {
+    height: auto;
+    text-align: center;
+}
+
+.footer .link_section h2 {
+    padding-top: 1rem;
+    text-decoration: underline;
+    text-decoration-color: #000;
+    text-shadow: 0px 0px 1rem #000;
+}
+
+.footer .link_section a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-shadow: 0px 0px 1rem #000;
+    color: #fff;
+}
+
+.footer .link_section a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.footer .address h2 {
+    padding-top: 1rem;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0px 0px 1rem #000;
+}
+
+.footer .address p {
+    color: #000;
+    font-size: 1.5rem;
+    padding: 4rem;
+    text-align: justify;
+    text-shadow: 0px 0px 1rem;
+    font-variant: small-caps;
+}
+
+/* End footer */
+
