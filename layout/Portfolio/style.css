@@ -334,11 +334,34 @@ div {
 .container .footer {
     grid-column-start: 1;
     grid-column-end: 4;
-    height: calc(100vh - 450px);
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("https://images.unsplash.com/photo-1555209183-8facf96a4349?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(200%) brightness(110%) drop-shadow(0 0 3rem);
 }
 
+.container .footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
 
-@media only screen and (max-width:700px) {
+.container .footer p {
+    padding: 3rem;
+    margin-left: 4rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: lightseagreen;
+}
+
+@media only screen and (max-width:800px) {
     .navbar_container .menu_main_content {
         display: none;
     }
@@ -486,8 +509,6 @@ div {
 
     /* Start project section */
     .container .porject_display_section {
-        /* grid-column-start: 1;
-        grid-column-end: 4; */
         height: auto;
         background-image: url("https://images.unsplash.com/photo-1555209183-8facf96a4349?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         object-fit: cover;
@@ -496,16 +517,17 @@ div {
         filter: saturate(200%) brightness(110%) drop-shadow(0 0 3rem);
         display: flex;
         flex-direction: column;
-
     }
 
     .container .porject_display_section .project_desc {
         text-decoration: none;
     }
+
     .container .porject_display_section .project_desc h2 {
         padding: 1rem;
         font-size: 1.6rem;
     }
+
     .container .porject_display_section .project_desc p {
         font-size: 1rem;
         margin-top: -70px;
@@ -515,9 +537,11 @@ div {
     /* End project section */
 
     /* Start Footer */
-    .container .footer {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        height: calc(100vh - 450px);
+    .container .footer p {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        width: 100%;
+        margin-left: 0;
     }
 }
