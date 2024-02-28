@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    height: 200px;
+    width: 100vw;
+    border: 2px solid #000;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+div p {
+    height: 20px;
+    overflow: hidden;
+    font-size: 1.2em;
+    font-weight: 900;
+    display: block;
+    animation: sidein;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes sidein {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
