@@ -1,0 +1,92 @@
+ /* Topic to learn here: Scale() Skew() translate() rotate() transform-origin * { */
+
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #666;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: tomato;
+    margin: 4vw auto;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    font-size: 1.2em;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.1);
+    transform: scaleY(1.1);
+    transform: scaleX(1.1);
+
+    transform: skewX(40deg);
+    transform: skewY(40deg);
+    transform: skew(40deg, 20deg);
+    transform: translate(50%, 50%);
+    transform: rotate(180deg) skew(40deg, 20deg);
+    transform: rotateX(20deg);
+    transform: rotateY(20deg);
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #666;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: tomato;
+    margin: 4vw auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height: 20%;
+    width: auto;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.2vw;
+    font-variant: small-caps;
+    color: #fff;
+    background-color: lightseagreen;
+    box-shadow: 0 0 1px 2px #fff;
+    font-weight: 900;
+}
+
+button:hover{
+    animation: magic 4s linear 0s ;
+}
+
+@keyframes magic {
+    from {
+        transform: skew(160deg);
+        box-shadow: 0 0 1rem 1rem red;
+    }
+    to {
+        transform: rotate(60deg);
+        box-shadow: 0 0 1rem 1rem red;
+    }
+}
