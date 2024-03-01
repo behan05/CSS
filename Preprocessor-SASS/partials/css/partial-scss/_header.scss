@@ -1,0 +1,32 @@
+header {
+    width: 100%;
+    height: 14vh;
+    background-color: $header-background-color;
+    box-shadow: 0 0 8px 2px $secondary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-family: $font-family;
+
+    .logo {
+        color: $primary-color;
+        font-size: $font-size;
+        font-weight: $font-weight;
+        cursor: progress;
+        font-family: $font-family;
+    }
+
+    .menu {
+        position: relative;
+
+        a {
+            color: $primary-color;
+            font-size: $font-size;
+            text-decoration: none;
+            margin: 1rem;
+            cursor: pointer;
+            font-family: $font-family;
+        }
+    }
+}

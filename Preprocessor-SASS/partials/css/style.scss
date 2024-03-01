@@ -1,0 +1,19 @@
+@import "./partial-scss/variable";
+@import "./partial-scss/header";
+@import "./partial-scss/content";
+@import "./partial-scss/footer";
+
+
+// Style Here: 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #54847B;
+    overflow-x: hidden;
+}

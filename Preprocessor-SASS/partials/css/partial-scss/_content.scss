@@ -1,0 +1,57 @@
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+
+    .left {
+        width: calc(100% - 50%);
+        height: 100%;
+        color: $primary-color;
+        font-size: $font-size;
+        background-color: $secondary-color;
+    
+        video {
+            width: 100%;
+            height: 100%;
+            filter: brightness(150%) saturate(170%) drop-shadow(0 0 3rem $secondary-color);
+            position: relative;
+            top: 0;
+            bottom: 0;
+            object-fit: cover;
+        }
+    }
+
+    .right {
+        width: calc(100% - 50%);
+        height: 100%;
+        color: $primary-color;
+        font-size: $font-size;
+        background-color: $secondary-color;
+        padding: 2rem;
+        font-family: $font-family;
+        overflow-y: scroll;
+
+        h3 {
+            font-size: 2.3rem;
+            font-weight: $font-weight;
+            text-align: center;
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-color: red;
+            padding-top: 1.3rem;
+
+            span {
+                color: red;
+            }
+        }
+        
+        p {
+            padding: 5rem;
+            text-align: justify;
+            text-shadow: 0 0 1rem #000;
+        }
+    }
+}
+
