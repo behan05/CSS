@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes slide-in {
+  from {
+    margin: 4px;
+    box-shadow: 0px 0px 1px 1px orangered;
+    filter: drop-shadow(1px 1px 2rem red) saturate(150%);
+    color: #000;
+  }
+  to {
+    margin: 0px;
+    border-radius: 8px;
+    color: #fff;
+  }
+}
+@keyframes logo {
+  from {
+    transform: skew(0deg) rotate(0deg);
+    color: #fff;
+  }
+  to {
+    transform: skew(60deg) rotate(20deg);
+    font-variant: normal;
+    color: orangered;
+  }
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #50727B;
+  /* Default styles for all screen sizes */
+  /* Media query for tablets (768px to 1024px) */
+  /* Media query for phones (up to 767px) */
+}
+.container .header {
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 2px 2px;
+  padding: 2vw;
+  font-family: arial;
+  background-color: lightseagreen;
+}
+.container .header .logo {
+  font-size: 1.4rem;
+  font-variant: small-caps;
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 1px 1px 1rem;
+  animation: logo 4s linear 0s infinite alternate;
+}
+.container .header .menu {
+  position: relative;
+}
+.container .header .menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1vw;
+  text-shadow: 1px 1px 1rem;
+  font-weight: 900;
+  box-shadow: 1px 1px 2px 2px;
+  border-radius: 4px;
+  animation: slide-in 2s linear 0s infinite alternate;
+}
+.container .header .menu a:hover {
+  color: chocolate;
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  font-family: inherit;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container .header .logo {
+    text-shadow: none;
+  }
+  .container .header .menu {
+    position: relative;
+  }
+  .container .header .menu a {
+    text-decoration: none;
+    text-shadow: none;
+  }
+  .container .header .menu a:hover {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container .header .logo {
+    text-shadow: 1px 1px 1rem;
+  }
+  .container .header .menu {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

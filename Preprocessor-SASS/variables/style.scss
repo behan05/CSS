@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// define some commonly used css properties
+$font-size : 1.2rem;
+$primary-color : #fff;
+$background-color : lightseagreen;
+$text-shadow: 1px 1px 1rem;
+$font-weight: 900;
+$font-family: arial;
+$box-shadow : 1px 1px 2px 2px;
+$animation: slide-in 2s linear 0s infinite alternate;
+$filter: drop-shadow(1px 1px 2rem) saturate(150%); 
+$logo-animation : logo 4s linear 0s infinite alternate;
+
+@keyframes slide-in {
+    from {
+        margin: 4px;
+        box-shadow : 0px 0px 1px 1px orangered;
+        filter: drop-shadow(1px 1px 2rem red) saturate(150%);
+        color: #000;
+    }
+
+    to {
+        margin: 0px;
+        border-radius: 8px;
+        color: $primary-color;
+    }
+}
+
+@keyframes logo {
+    from {
+        transform: skew(0deg) rotate(0deg);
+        color: #fff;
+    }
+    to {
+        transform: skew(60deg) rotate(20deg);
+        font-variant: normal;
+        color: orangered;
+    }
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #50727B;
+
+    /* Default styles for all screen sizes */
+    .header {
+        width: 100%;
+        height: 14vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: $box-shadow;
+        padding: 2vw;
+        font-family: $font-family;
+        background-color: $background-color;
+
+        .logo {
+            font-size: 1.4rem;
+            font-variant: small-caps;
+            color: $primary-color;
+            font-weight: $font-weight;
+            text-shadow: $text-shadow;
+            animation: $logo-animation;
+        }
+
+        .menu {
+            position: relative;
+
+            a {
+                text-decoration: none;
+                color: $primary-color;
+                font-size: $font-size;
+                padding: 1vw;
+                text-shadow: $text-shadow;
+                font-weight: $font-weight;
+                box-shadow: $box-shadow;
+                border-radius: 4px;
+                animation: $animation;
+
+                &:hover {
+                    color: chocolate;
+                    font-size: 1.5rem;
+                    font-variant: small-caps;
+                    font-family: inherit;
+                }
+            }
+        }
+    }
+
+    /* Media query for tablets (768px to 1024px) */
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .header {
+
+            .logo {
+                text-shadow: none;
+            }
+
+            .menu {
+                position: relative;
+
+                a {
+                    text-decoration: none;
+                    text-shadow: none;
+
+                    &:hover {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Media query for phones (up to 767px) */
+    @media screen and (max-width: 767px) {
+        .header {
+
+            .logo {
+                text-shadow: $text-shadow;
+            }
+
+            .menu {
+                display: none;
+            }
+        }
+    }
+}
