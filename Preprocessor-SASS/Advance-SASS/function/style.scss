@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+$container-width: 600;
+
+@function half($width) {
+    @return $width / 2+px;
+}
+
+@function one-third($width) {
+    @return $width / 3+px;
+}
+
+@function one-fourth($width) {
+    @return $width / 4+px;
+}
+
+@mixin heightAndTextStyle() {
+    color: #000000;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    border: 2px solid yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: conic-gradient(from 90deg, lightseagreen, yellowgreen);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .box1 {
+        width: half($container-width);
+        height: half($container-width);
+        @include heightAndTextStyle();
+    }
+
+    .box2 {
+        width: one-third($container-width);
+        height: one-third($container-width);
+        @include heightAndTextStyle();
+    }
+
+    .box3 {
+        width: one-fourth($container-width);
+        height: one-fourth($container-width);
+        @include heightAndTextStyle();
+    }
+}
