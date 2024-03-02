@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #212121;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+
+    .box {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #fff;
+        float: left;
+        margin: 15px;
+        border-radius: 10px;
+    }
+
+    .box1 {
+        background-image: linear-gradient(red, green, blue); /* top to botton default*/
+    }
+    .box2 {
+        background-image: linear-gradient(to right,red, green, blue);
+    }
+    .box3 {
+        background-image: linear-gradient(to left,red, green, blue);
+    }
+    .box4 {
+        background-image: linear-gradient(130deg,red 50%, green, blue 0, pink );
+    }
+    .box5 {
+        background-image: repeating-linear-gradient(50deg,red 10px, green 20px);
+    }
+    .box6 {
+        background-image: linear-gradient(to left, lightseagreen 40%, darkgray 90%);
+    }
+
+}
