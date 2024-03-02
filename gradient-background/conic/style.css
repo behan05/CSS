@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.box1{
+    background-image: conic-gradient(red, blue);
+}
+.box2{
+    background-image: conic-gradient(from 90deg ,lightseagreen 20%, blue, lightseagreen, red);
+}
+.box3{
+    background-image: conic-gradient(from 90deg ,lightseagreen, blue, yellow, pink, green, lightseagreen);
+}
+.box4{
+    background-image: conic-gradient(from 90deg at 30%,lightseagreen, blue, yellow, pink, green);
+}
+.box5{
+    background-image: repeating-conic-gradient(from 40deg at 50% ,lightseagreen, blue 10%, yellow 20%, green 10%, lightseagreen);
+}
+.box6{
+    background-image: repeating-conic-gradient(from 50deg at center, red 20%, blue 30%)
+}
