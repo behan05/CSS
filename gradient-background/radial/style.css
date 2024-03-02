@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #000;
+    float: left;
+    margin: 20px;
+}
+
+.box1 {
+    background-image: radial-gradient(red 10%, blue, pink, green, yellow);
+}
+.box2 {
+    background-image: radial-gradient(closest-side at 30%, red, pink);
+}
+.box3 {
+    background-image: radial-gradient(farthest-corner at 10%, red, pink);
+}
+.box4 {
+    background-image: repeating-radial-gradient(closest-side at center, red, blue 20px);
+}
+.box5 {
+    background-image: repeating-radial-gradient(farthest-corner at 10%, red, blue 5px);
+}
+.box6 {
+    background-image: repeating-radial-gradient(closest-side at 80%, red, blue 8px);
+}
