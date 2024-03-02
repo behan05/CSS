@@ -1,0 +1,11 @@
+$primery-color: #fff;
+$secondary-color: #000;
+
+@mixin text-style($textColorName:$secondary-color, $font-size:20px,$font-weight) {
+    color:$textColorName;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    background-image: linear-gradient(to right, red, green, blue, green);
+    border: transparent;
+    border-radius: 10px;
+}
