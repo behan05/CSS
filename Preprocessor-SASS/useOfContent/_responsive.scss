@@ -1,0 +1,10 @@
+
+@mixin responsive($breakpoint-min, $breakpoint-max) {
+
+    @media screen and (min-width: $breakpoint-min) and (max-width: $breakpoint-max){
+
+        @content;
+
+    }
+}
+

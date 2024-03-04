@@ -1,0 +1,8 @@
+@use './variable';
+
+@mixin theme($backgroundColor, $color) {
+    background-color: $backgroundColor;
+    color: $color;
+
+    @content;
+}

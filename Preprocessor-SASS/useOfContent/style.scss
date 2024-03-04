@@ -1,0 +1,50 @@
+// import partials / modules.
+
+@import './theme';
+@import './flex-center';
+@import './responsive';
+
+// access mixin for theme change for particular div.
+.div1 {
+    @include theme(#000, #ccc) {
+        width: 200px;
+        height: 200px;
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+}
+
+// access mixin to content align center.
+.div2 {
+    @include flex-center();
+
+    // access div1 properties.
+    @extend .div1;
+}
+
+// set body width & height.
+body {
+    width: 100vw;
+    height: 100vh;
+
+    // use at-root directive to avoid parent body.
+    @at-root {
+
+        .container {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(lightseagreen, brown);
+
+            // add media directive which is written in mixin directive.
+            @include responsive(1px, 450px) {
+                background-image: linear-gradient(to top, yellow, red);
+            }
+
+            // add media directive which is written in mixin directive.
+            @include responsive(451px, 768px) {
+                background-image: linear-gradient(to top, green, orange);
+            }
+
+        }
+    }
+}
