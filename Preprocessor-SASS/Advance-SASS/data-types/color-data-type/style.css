@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: conic-gradient(from 90deg at center, lightseagreen, gray, lightseagreen);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  background-color: lightseagreen;
+}
+.container .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background-color: #637d77;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: conic-gradient(from 90deg at center,lightseagreen, gray, lightseagreen);
+}
+
+$background-color: lightseagreen;
+$amount : 70;
+
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @content;
+}
+
+.container {
+    @include flex-center() {
+        border-radius: 10px;
+        border: 2px solid #fff;
+        margin: 0 auto
+    };
+    width: 400px;
+    height: 400px;
+    background-color: $background-color;
+
+    .box {
+        @include flex-center() {
+            border-radius: 10px;
+            border: 2px solid #fff;
+            margin: 0 auto
+        }
+        width: 200px;
+        height: 200px;  
+        // background-color: darken($background-color, $amount);
+        // background-color: lighten($background-color, $amount);
+        // background-color: adjust-hue($background-color, $amount);
+        // background-color: saturate($background-color, $amount);
+        // background-color: desaturate($background-color, $amount);
+        // background-color: transparentize($background-color, $amount);
+        background-color: mix($background-color, red, $amount);
+    }
+}
