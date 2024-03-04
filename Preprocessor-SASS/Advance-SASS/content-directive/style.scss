@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// @mixin display-center {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     @content;
+// }
+
+// .div {
+//     @include display-center() {
+//         border: 2px solid red;
+//     }
+// }
+
+// .div2 {
+//     @extend .div;
+// }
+
+@mixin border-radius($value) {
+    -webkit-border-radius: $value + px;
+    -o-border-radius: $value + px;
+    -moz-border-radius: $value + px;
+    border-radius: $value + px;
+
+    @content;
+}
+
+.box1 {
+    @include border-radius(4) {
+        border: 2px solid #fff;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.box2 {
+    @extend .box1;
+}
