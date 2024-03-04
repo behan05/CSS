@@ -1,0 +1,16 @@
+$list : 2px,
+3px,
+4px;
+$list2 : 5px,
+6px,
+7px;
+
+.box {
+    // font-size: $list;
+    font-size: length($list);
+    // font-size: nth($list, 2);
+    // font-size: index($list, 3px);
+    // font-size: set-nth($list, 2px, 2rem);
+    // font-size: append($list, 5rem);
+    // font-size: join($list, $list2);
+}
