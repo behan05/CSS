@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    // font-size: abs(-10);
+    // font-size: ceil($number: 2.5);
+    // font-size: floor($number: 1.2);
+    // font-size: round($number: 5.7);
+    // font-size: max(1px,2px,4px);
+    // font-size: min(1px,2px,4px);
+    // font-size: comparable($number1: 1px, $number2: 1rem);// return false => unit are not same.
+    // font-size: random(10);
+    font-size: percentage($number: 1) // 1 => 100%, 2 => 200%, 3 => 300% and so on.
+}
