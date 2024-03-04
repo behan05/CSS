@@ -1,0 +1,18 @@
+$font-weight: (
+    regular:abs(400),
+    medium:abs(500),
+    bold:abs(700),
+);
+
+$font-weight-another: (lightest: 100, bolder: 900);
+
+$font-weight-merge : map-merge($map1: $font-weight, $map2: $font-weight-another);
+
+$font-remove : map-remove($font-weight, bold);
+
+.box {
+    // font-weight: map-get($font-weight, regular);
+    // font-weight: map-keys($font-weight);
+    // font-weight: map-values($font-weight);
+    font-weight: map-keys($font-weight-merge);
+}
