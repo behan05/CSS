@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn, button {
+  padding: 1.1rem 2rem;
+  margin: 0 auto;
+  background: #120311;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  display: block;
+}
+
+button {
+  color: #ffffff;
+  margin-top: 7rem !important;
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
