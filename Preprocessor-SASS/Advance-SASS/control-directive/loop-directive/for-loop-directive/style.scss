@@ -1,0 +1,38 @@
+$box1: "box1";
+$box2: "box2";
+
+@for $i from 1 through 5 {
+
+    // variable interpolation => 
+    // .box#{$i} {
+    //     color: darken($color: blue, $amount: $i * 10);
+    // }
+
+    @if $i ==1 {
+        .#{$box1} {
+            background-image: linear-gradient(to right, purple, pink);
+            width: 100px * $i;
+            height: 200px;
+            margin: 1rem;
+
+        }
+    }
+
+    @else if $i ==2 {
+        .#{$box2} {
+            background-image: linear-gradient(to right, purple, peru);
+            width: 100px * $i;
+            height: 200px;
+            margin: 1rem;
+        }
+    }
+
+    @else {
+        .box#{$i} {
+            background-color: lighten(peru, $i + 10);
+            width: 100px * $i;
+            height: 200px;
+            margin: 1rem;
+        }
+    }
+}

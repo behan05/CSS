@@ -1,0 +1,36 @@
+.box1 {
+  background-image: linear-gradient(to right, purple, pink);
+  width: 100px;
+  height: 200px;
+  margin: 1rem;
+}
+
+.box2 {
+  background-image: linear-gradient(to right, purple, peru);
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+}
+
+.box3 {
+  background-color: #dba674;
+  width: 300px;
+  height: 200px;
+  margin: 1rem;
+}
+
+.box4 {
+  background-color: #dca978;
+  width: 400px;
+  height: 200px;
+  margin: 1rem;
+}
+
+.box5 {
+  background-color: #ddac7c;
+  width: 500px;
+  height: 200px;
+  margin: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
