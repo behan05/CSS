@@ -1,0 +1,15 @@
+
+// learn about variable interpolation => 
+
+// $theme: "box-";
+
+// .#{$theme}1{
+//     color: red;
+// }
+
+@for $i from 1 through 4{
+    .box#{$i}{
+        color: darken(lightseagreen, 10 * $i);
+        width: 100px * $i;
+    }
+}
