@@ -1,0 +1,17 @@
+
+// theme component.
+
+@mixin theme-style($theme) {
+    @if $theme == "light" {
+        background-color: $primary-color;
+        color: $secondary-color;
+    }
+    @else if $theme == "dark" {
+        background-color: $secondary-color;
+        color: $primary-color;
+    }
+    @else {
+        background-color: darken($color: #000000, $amount: 10);
+    }
+
+}

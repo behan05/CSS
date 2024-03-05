@@ -1,0 +1,32 @@
+@import "./variables";
+@import "./theme";
+@import "./responsive";
+@import "./button";
+
+
+// for container theme => 
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    .container {
+        width: 100%;
+        height: 100%;
+        @include theme-style("dark");
+        @include responsive(449px) {
+            @include bagChange();
+        }
+        
+        button {
+            @include button-style("secondary") {
+                font-size: 2rem;
+                margin: 3rem;
+            }
+        }
+    }
+}
+
+
+// container responsive
+

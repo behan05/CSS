@@ -1,0 +1,9 @@
+// make container responsive => 
+
+@mixin responsive($breakpoint) {
+    @if ($breakpoint <=450px) {
+        @media screen and (max-width: $breakpoint) {
+            @content;
+        }
+    }
+}
