@@ -1,0 +1,56 @@
+// each directive use for two data type =>
+// 1 => list, 2 => map
+
+// $list: (
+//     normal,
+//     bold,
+//     italic
+// );
+
+// $list: [normal bold italic];
+
+// @each $i in  [normal bold italic]{
+//     .#{$i} {
+//         font-size: $i;
+//     }
+// }
+
+// @each $i in normal,bold{
+//     .#{$i} {
+//         font-weight: $i;
+//     }
+// }
+
+// @each $i in (normal,bold){
+//     .#{$i} {
+//         font-weight: $i;
+//     }
+// }
+
+// $box: "box";
+
+// $multidimention-list: (
+//     (1rem bold italic),
+//     (1.2rem light normal),
+// );
+
+// @each $font-size, $font-weight, $font-style in $multidimention-list {
+//     .#{$box} {
+//         font-size: $font-size;
+//         font-weight: $font-weight;
+//         font-style: $font-style;
+//     }
+// }
+
+
+// 2 => map.
+
+$box: "box";
+$mapItem: (normal: 1.1em, italic: 1.2rem);
+
+@each $i, $j in $mapItem {
+    .#{$box} {
+        font-style: $i;
+        font-size: $j;
+    }
+}
