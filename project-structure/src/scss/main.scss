@@ -1,0 +1,11 @@
+// main.scss: Main Sass file where you import all partials.
+
+$color: #000;
+$background: #fff;
+
+div {
+    background-color: $color;
+    color: $background;
+    width: 300px;
+    height: 300px;
+}
