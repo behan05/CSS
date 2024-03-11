@@ -1,0 +1,16 @@
+
+
+@mixin border-Animation() {
+    @keyframes animate {
+        from {
+            box-shadow : (0 0 0 0 $mix-color);
+            filter: drop-shadow(1px 1px 1rem)
+        }
+        to {
+            box-shadow : (0 0 0 0 $mix-color2);
+            filter: drop-shadow(1px 1px 1rem)
+        }
+    }
+
+    @content;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "login-page",
+  "version": "1.0.0",
+  "description": "create responsive login page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/behan05/CSS.git"
+  },
+  "keywords": [
+    "login",
+    "page"
+  ],
+  "author": "behan kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/behan05/CSS/issues"
+  },
+  "homepage": "https://github.com/behan05/CSS#readme"
+}

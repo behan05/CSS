@@ -1,0 +1,42 @@
+// ../../ is a relative path notation that means "go up two levels in the directory structure."
+
+
+
+@mixin background-Animation() {
+    @keyframes imageChange {
+        from {
+            background-image: url("/login-page/src/assests/darkBg1.jpg");
+            object-fit: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: brightness(120%) contrast(130%) saturate(130%);
+        }
+
+        to {
+            background-image: url("/login-page/src/assests/darkBg2.jpg");
+            object-fit: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: brightness(120%) contrast(130%) saturate(130%);
+        }
+    }
+
+    @content;
+}
+
+@mixin add-border {
+    -o-border: 2px solid $prime-color;
+    -webkit-border: 2px solid $prime-color;
+    -ms-border: 2px solid $prime-color;
+    -moz-border: 2px solid $prime-color;
+    border: 2px solid $prime-color;
+}
+
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @content;
+}
+

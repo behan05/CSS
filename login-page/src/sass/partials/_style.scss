@@ -1,0 +1,131 @@
+// @import "./component";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    @include flex-center();
+
+    @include background-Animation() {
+        animation: imageChange 25s ease-in-out 0s infinite;
+    }
+
+    .container__form {
+        @include add-border();
+        width: 40%;
+        height: 80%;
+
+        @media screen and (min-width: 100px) and (max-width: 550px) {
+            @include flex-center() {
+                width: 90%;
+                height: 90%;
+                flex-direction: column;
+                border: none
+            }
+
+        }
+
+        @include border-Animation() {
+            animation: animate 8s linear 0s infinite;
+            border-radius: 8px;
+        }
+
+        .container__top {
+            width: 100%;
+            height: 40%;
+            border-bottom: 1px solid $prime-color;
+
+            @include flex-center() {
+                flex-direction: column
+            }
+
+            h1 {
+                color: $prime-color;
+                font-size: map-get($fontSize-list, x-large);
+                letter-spacing: 0.3rem;
+
+            }
+
+            .container__image {
+                height: 70%;
+                width: 35%;
+                border-radius: 50%;
+                margin-top: 0.5rem;
+                background-image: url("https://images.emojiterra.com/google/noto-emoji/unicode-15/animated/1fae3.gif");
+                object-fit: cover;
+                background-size: cover;
+                background-repeat: no-repeat;
+                filter: contrast(110%) saturate(110%);
+                @media screen and (min-width: 100px) and (max-width: 550px) {
+                    @include flex-center() {
+                        width: 50%;
+                        height: 50%;
+                    }
+        
+                }
+            }
+        }
+
+        .container__botton {
+            width: 100%;
+            height: calc(100% - 40%);
+
+            h2 {
+                color: $prime-color;
+                text-align: center;
+                margin-top: 5rem;
+                font-size: map-get($map: $fontSize-list, $key: larger);
+                letter-spacing: 0.5rem;
+            }
+
+            form {
+                width: 100%;
+                height: 75%;
+                color: $prime-color;
+
+                @include flex-center() {
+                    flex-direction: column
+                }
+
+                ;
+                // background-color: lightseagreen;
+
+                label {
+                    font-size: map-get($map: $fontSize-list, $key: larger);
+                    letter-spacing: 0.2rem;
+                    font-variant: small-caps;
+
+                    input {
+                        outline: none;
+                        background: transparent;
+                        border: 1px solid $prime-color;
+                        display: block;
+                        height: 2.3rem;
+                        color: $mix-color2;
+
+                    }
+                }
+
+                button {
+                    font-size: map-get($map: $fontSize-list, $key: larger);
+                    letter-spacing: 0.2rem;
+                    font-variant: small-caps;
+                    padding: 0.5rem 1.5rem;
+                    margin-top: 1rem;
+                    margin-right: 6rem;
+                    border: 1px solid $prime-color;
+                    background: transparent;
+                    color: $prime-color;
+                    border-radius: 10px;
+                }
+
+            }
+        }
+    }
+}
